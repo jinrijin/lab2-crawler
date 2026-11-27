@@ -133,8 +133,8 @@ def main():
     print(f"共解析出 {len(out_list)} 条新闻数据")
     print("抓取结果：")
     for row in out_list:
-        print(f"{row[0]:>2}  [{row[1]}] {row[2][:40]}")
-        print(f"      {row[3]}")
+        print(f"{row[0]:>2}  [{row[1]}] {row[2]}")
+        print(f"     链接：{row[3]}")
 
     save_csv(out_list, OUT_PATH, HEADER)
     print(f"数据已保存到 {OUT_PATH}")
